@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0 0;padding:0 0;font-size:10px;}
+div{margin:0 auto;width:100%;height:1000px;}	
+.head{float:left;height:9%;width:100%;font-size:12px;}
+.body{float:left;margin-left:5%;width: 90%;height:80%;}
+.foot{float:left;margin-top:10px;width: 100%;border-top:1px #999999 solid;
+margin-top: 790px;height:220px;}
+.bar{float:left;height:50px;top:400px;width:100%;
+position:fixed;background:#64C7B2;border:1px #666666 solid;}	
+.head .head-top{float:left;height:50px;
+width: 100%;background:beige;line-height:30px;}	
+.head-top ul{float:right;}
+.head-top ul li{float:left;	margin-right:20px;
+line-height: 50px;list-style:none;}
+.head-top ul li a:visited{color: #000000;}		
+.head-top ul li a:hover{color: #F85659;} 
+.head-top .ul1{float:left;}
+.head-top .ul2{margin-left: 18%;float:left;width: 400px;}
+.head-top .ul2 li{margin-left: 30px;font-size: 18px;}
+.head-top .ul3{float:right;font-size: 15px;}
+.head-top .ul3 img{height: 30px;}
+.body-left{float:left;height:510px;width:25%;font-size:12px;margin-top:50px;}
+.body-right{float:right;height:800px;width:75%;margin-top:50px;}
+.body-right .top{width:75%;margin-top:20px;margin-left:18%;height:60px;}
+.body-right .top input{width:80%;border:2px #00A57F solid;height:40px;font-size: 15px;}
+.body-right .top button{width:19%;border:1px #00A57F solid;
+height:41px;background-color:#00CC99;font-size:15px;margin-left: -2px;}
+.body-right .middle{margin-top:5px;margin-left:8%;height:200px;}
+.body-right .middle .middle-top{margin-left:13%;line-height:35px;width:70%;height:40px;
+font-size: 18px;margin-top: -10px;}
+.body-right .middle .middle-top span{float:left;display:block;margin-left:6%;
+height:35px;padding-top:5px;}	
+.body-right .middle .middle-bottom{margin-top:4px;margin-left:8%;line-height:35px;width:80%;
+height:165px;}
+.body-right .middle .middle-bottom .my{width:600px;height:165px;}
+.body-right  .middle .mycard{margin-top: 10px;margin-left:10%;
+float:left;height:110px;width:90%;}	
+.body-right .bottom{float: left;margin-left:-5%;font-size: 16px;
+height:500px;width:100%;margin-top:20px;background:#FFFFFF;}
+.body-right .bottom .bottom-t{margin-left: -16px;width: 100%;height: 45px;}
+.body-right .bottom .bottom-m{margin-left: -16px;width: 100%;height: 45px;}
+.body-right .bottom .bottom-b{margin-left: -16px;width: 100%;height: 45px;background: #999999;}
+.body-right .bottom .bottom-b .right ul{margin-left: -50px;}
+.body-right .bottom .bottom-b .left ul{margin-left:10px;backgroud:red;}
+.body-right .bottom .bottom-b .right ul li{list-style: none;float: left;line-height: 25px;
+margin-top: 8px;margin-left: 10px;border: 1px solid beige;}
+.bottom .left{float: left;height: 45px;width: 400px;}
+.bottom .left ul{margin-left: 10px;}
+.bottom .left ul li{float: left;line-height: 45px;margin-left: 10px;list-style: none;}
+.bottom .left .u1 .li1{color: #00B38A;}
+.bottom .left .u2 .li1{color: #FA6041;}
+.bottom .right{float: right;height: 45px;width: 300px;}
+.bottom .right p{line-height: 45px;color: #00B38A;}	
+.foot .foot-top{height:220px;background:#FFFFFF;}
+.foot .foot-top .ffbottom{height:220px;background:#FFFFFF;}
+.foot .foot-top .ffbottom .left{float:left;width:80%;height:220px;border-right:1px #CCCCCC solid;}
+.foot .foot-top .ffbottom .left a:visited{color: #000000;}
+.foot .foot-top .ffbottom .left a:hover{color: #F85659;}
+.foot .foot-top .ffbottom .left dl{float:left;margin-left:150px;margin-top:40px;}
+.foot .foot-top .ffbottom .left dl dt{font-size: 18px;}
+.foot .foot-top .ffbottom .left dl dd{font-size:15px;}	
+ .foot-top .ffbottom .left dd,dt{margin-top:20px;}	
+.foot .foot-top .ffbottom .right{float:right;width:20%;height:220px;}
+.foot .foot-top .ffbottom .right span{display: block;margin-left:40px;
+margin-top:20px;height:40px;
+width:130px;font-size: 15px;
+line-height:40px;border:1px #C39 solid;padding-left:10px;}			
+.bar ul li{font-size:18px;float:left;line-height:35px;list-style:none;
+margin-left:20px;}
+.bar .bar-left .zc{height: 50px;margin-top: -10px;width:310px;
+float: right;font-size: 20px;text-align: center;}
+.bar .bar-left .zc a:visited{color: #000000;}
+.bar .bar-left .zc a:hover{color: #F85659;}
+	
+ 
+	 
+	 
+	 	

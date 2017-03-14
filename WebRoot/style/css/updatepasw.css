@@ -1,0 +1,26 @@
+@charset "utf-8";
+body{margin:0 0;padding: 0 0;}
+div{margin: 0 auto;width: 100%;height: 1000px;}
+.bod{float: left;width: 80%;height: 100%;margin-left: 10%;}
+.bod .bod-left{float: left;width: 20%;
+height: 40%;background: #F1F1F1;}
+.bod .bod-right{float: right;width: 75%;
+height: 80%;background: #FAFAFA;font-size: 18px;}
+.bod .bod-left ul{margin-left: -40px;}
+.bod .bod-left ul li{list-style:none;border: 1px solid ;
+height: 50px;line-height: 50px;text-align: center;margin-top: 20px;width: 100%;}
+.bod .bod-right .br-top{width: 100%;height: 30%;border-bottom: 2px dotted ;}
+.bod .bod-right .br-bottom{width: 100%;height: 40%;}
+.bod .bod-right .br-top h3{margin-left: 30px;}
+.bod .bod-right .br-top p{margin-top: 30px;margin-left: 50px;}
+.bod .bod-right .br-bottom img{width: 50px; height: 50px;margin-left: 60px;margin-top: 30px;}
+#br1{display: none;}
+.bod .bod-right .br-top label{margin-left: 45px;}
+.bod .bod-right .br-top input{margin-left: 20px;margin-top: 10px;width: 400px;height: 40px;}
+.bod .bod-right .br-top .myb{margin-left: 140px;margin-top: 10px;}
+.update{width: 100%;}
+.update .update-top{width: 100%; height: 40px;background:#F85569;}
+.update .update-top span{line-height: 40px;margin-left: 20px;color: white;}
+.update ul li{margin-top: 10px;list-style: none;}
+.update ul li input{width: 350px; height: 40px;margin-left: 10px;}
+.update .myb{margin-left: 120px;width: 200px;}

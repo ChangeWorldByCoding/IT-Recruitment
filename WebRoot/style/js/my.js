@@ -1,0 +1,32 @@
+$(document).ready(function(){
+	$("#bu2").hover(function(){
+		$("#bu2").css("background-color","#F85659");
+	});
+	$("#bu2").mouseleave(function(){
+		$("#bu2").css("background-color","#FFFFFF");
+	});
+	$("#bu3").hover(function(){
+		$("#bu3").css("background-color","#F85659");
+	});
+	$("#bu3").mouseleave(function(){
+		$("#bu3").css("background-color","#FFFFFF");
+	});
+	$("#bu4").hover(function(){
+		$("#bu4").css("background-color","#F85659");
+	});
+	$("#bu4").mouseleave(function(){
+		$("#bu4").css("background-color","#FFFFFF");
+	});
+	$("#bu5").hover(function(){
+		$("#bu5").css("background-color","#F85659");
+	});
+	$("#bu5").mouseleave(function(){
+		$("#bu5").css("background-color","#FFFFFF");
+	});
+	$("#bu6").hover(function(){
+		$("#bu6").css("background-color","#F85659");
+	});
+	$("#bu6").mouseleave(function(){
+		$("#bu6").css("background-color","#FFFFFF");
+	});
+});

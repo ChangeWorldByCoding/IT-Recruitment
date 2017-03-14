@@ -1,0 +1,14 @@
+.city{width: 500px;height: 470px;background: #C6D1E5;}
+.city .top{width: 500px;height: 40px;background:#00B38A ;}
+.city .top h3{color: white;line-height: 40px;margin-left: 10px;}
+.city .middle{width: 500px;height: 380px;}
+.city .middle .middle-top{float: left;width: 500px;height: 130px;}
+.city .middle .middle-top p{margin-top: 10px;margin-left: 40px;
+font-size: 18px;}
+.city .middle .middle-b{float: left;width: 500px;height: 250px;}
+.city .middle .middle-b .middle-bt{float: left;height: 60px;width: 500px;}
+.city .middle .middle-b .middle-bt span,button{line-height: 60px;margin-left: 10px;} 
+.city .middle .middle-b .middle-bb{float: left;height: 190px;width: 500px;}
+.city .middle .middle-b .middle-bb button{height: 50px;margin-top: 20px;margin-left: 40px;}
+.city .bottom{width: 500px;height: 50px;}
+.city .bottom p{line-height: 50px;margin-left: 40px;}

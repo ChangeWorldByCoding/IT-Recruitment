@@ -1,0 +1,62 @@
+body{margin: 0 0;padding: 0 0;}
+div{margin: 0 auto;width: 1400px;height: 1000px;}
+.bo{float: left;width: 100%;height: 1000px;}
+.bo-left{float: left;width: 20%;height: 1100px;background: #ED5565;}
+.bo-right{float: right;width: 80%;height: 1000px;background: #F2F4F6;}
+.bo-right .bo-right-top{width: 100%;height: 80px;background: #FFFFFF;}
+.bo-right .bo-right-top .inpt{margin-top: 10px;margin-left: 5%;width: 35%; height: 40px;}
+.bo-right .bo-right-top .myright{float: right;width: 50%;height: 80px;}
+.bo-right .bo-right-top .myright ul{margin-left: 8%;}
+.bo-right .bo-right-top .myright ul li{list-style: none;float: left;line-height: 80px;margin-left: 10px;}
+.bo-right .bo-right-bottom{margin-top: 20px;width: 95%;height: 920px;}
+.bo-right .bo-right-bottom .brb-top{height: 115px;width: 100%;border: 1px solid;}
+.bo-right .bo-right-bottom .brb-top ul li{list-style: none;float: left;margin-left: 80px;}
+.bo-right .bo-right-bottom .brb-top ul li .span1{color: #FF5959;}
+.bo-right .bo-right-bottom .brb-top ul li p{color: #FF5959;margin-top: -5px;}
+.bo-right .bo-right-bottom .brb-top ul li img{margin-top: 10px;}
+.bo-right .bo-right-bottom .brb-middle{margin-top: 10px;height: 390px;width: 100%;border: 1px solid;}
+.bo-right .bo-right-bottom .brbm-top{width: 100%;height: 50px;border-bottom: 1px solid;}
+.bo-right .bo-right-bottom .brb-left{float: left;height: 100%;width: 220px;background: #FFFFFF;}
+.bo-right .bo-right-bottom .brb-left .ypjl{width: 100%;height: 40%;border: 2px solid #F8F8F8;}
+.bo-right .bo-right-bottom .brb-left .xzjl{width: 100%;height: 60%;}
+.bo-right .bo-right-bottom .brb-left .ypjl ul li{border-bottom: 1px solid #F2F4F6;width: 100%;
+line-height: 40px;height:40px ;text-align: center;list-style: none;margin-left: -40px;}
+.bo-right .bo-right-bottom .brb-left .xzjl ul li{border-bottom: 1px solid #F2F4F6; width: 100%;
+text-align: center;line-height: 40px;height:40px ;list-style: none;margin-left: -40px;}
+.bo-right .bo-right-bottom .brb-left ul .li02{border-left: 1px solid #F2F4F6;}
+.bo-right .bo-right-bottom .brb-left ul li a:visited{color: #000000;}
+.bo-right .bo-right-bottom .brb-left button{width: 220px;height: 50px;}
+.bo-right .bo-right-bottom .brb-left a{font-size: 18px;}
+.bo-right .bo-right-bottom .brb-left .bu1{background: #F4F4F4;}
+.bo-right .bo-right-bottom .brb-left .bu2{background: #FFFFFF;}
+.bo-right .bo-right-bottom .brb-left .bu1 a:visited{color: red;}
+.bo-right .bo-right-bottom .brb-left .bu2 a:visited{color: #000000;}
+.bo-right .bo-right-bottom .brb-right{float: right;height: 920px;width:75%;}
+.bo-right .bo-right-bottom .brb-right .brbr-top{width: 100%;height: 40px;border-bottom: 1px dotted;}
+.bo-right .bo-right-bottom .brb-right .brbr-top span{float: left;margin-top: 5px;margin-left: 10px;}
+.bo-right .bo-right-bottom .brb-right .brbr-top .input{margin-left: 62%;}
+.bo-right .bo-right-bottom .brb-right .brbr-top .input1{width: 200px;height: 30px;border: 3px solid #F85659;}
+.bo-right .bo-right-bottom .brb-right .brbr-top .input2{height: 29px;width: 60px;
+margin-left: -3px;background: #F85659;border: 2px solid #F85659;}
+.brbmt-left{float: left;width: 150px;height: 100%;}
+.brbmt-left img{width: 20px;height: 20px;margin: 10px 10px;}
+.brbmt-right{width: 100px;height: 100%;float: right;}
+.brbmt-right a{line-height:50px;}
+.bo-right .bo-right-bottom .brbm-bottom{height: 340px;width: 100%;}
+.brbm-content{margin-top: 100px;width: 300px;height: 100px;}
+.brbm-content_t{width: 100%;height: 5%;margin-top: 10px;font-size: 18px;}
+.brbm-content_b{width: 100%;height: 10%;margin-top: 10px;}
+.brbm-content_b ul li{float: left;list-style: none;margin-left: 80px;}
+.brbm-content_b ul li img{width: 40px; height: 40px;}
+.brbm-content_ a{margin-left: 20px;}
+.bo-right .bo-right-bottom .brb-bottom{margin-top: 10px;height: 390px;width: 100%;border: 1px solid;}
+.myfield{width: 50px;height: 20px;margin-top: 20px;margin-left: 40px;}
+.bo-right .bo-right-bottom .brb-left h3,span{margin-top: 10px;margin-left: 20px;}
+.bo-right .bo-right-bottom .brb-left .myForm ul li{margin-top: 10px;list-style: none;}
+.bo-right .bo-right-bottom .brb-left .myForm .myButton{width: 300px;height: 50px;
+float: left;margin-left: 300px;}
+.filterinput{background-color:rgba(249, 244, 244, 0);border-radius:15px;
+width:90%;height:30px;border:thin solid #FFF;text-indent:0.5em;
+font-weight:bold;color:#FFF;}
+#demo-list a{overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;
+white-space:nowrap;width:100%;}

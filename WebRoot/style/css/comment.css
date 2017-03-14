@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+
+.main01 {
+	width: 80%;
+	height: 1000px;
+}
+
+.main01 .main-left {
+	float: left;
+	width: 70%;
+	height: 100%;
+   margin-left:300px;
+}
+
+.main01 .main-right {
+	float: right;
+	width: 30%;
+	height: 40%;
+}
+
+.main01 .main-right img {
+	width: 300px;
+	border-radius: 5px;
+	margin: 12px 12px;
+}
+
+.main01 .main-right h4 {
+	margin: 20px 20px;
+}
+
+.myfield {
+	width: 90%;
+}
+
+.bt0 {
+	width: 200px;
+	height: 45px;
+	margin-top: 20px;
+}
+
+.head {
+	float: left;
+	height: 9%;
+	width: 100%;
+	font-size: 12px;
+}
+
+.head .head-top {
+	float: left;
+	height: 50px;
+	width: 100%;
+	background: beige;
+	line-height: 30px;
+}
+
+.head-top ul {
+	float: right;
+}
+
+.head-top ul li {
+	float: left;
+	margin-right: 20px;
+	line-height: 50px;
+	list-style: none;
+}
+
+.head-top ul li a:visited {
+	color: #000000;
+}
+
+.head-top ul li a:hover {
+	color: #F85659;
+}
+
+.head-top .ul1 {
+	float: left;
+}
+
+.head-top .ul2 {
+	margin-left: 18%;
+	float: left;
+	width: 400px;
+}
+
+.head-top .ul2 li {
+	margin-left: 30px;
+	font-size: 18px;
+}
+
+.head-top .ul3 {
+	float: right;
+	font-size: 15px;
+}
+
+.head-top .ul3 img {
+	height: 30px;
+}
