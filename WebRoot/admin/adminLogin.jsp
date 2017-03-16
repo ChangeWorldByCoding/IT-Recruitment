@@ -45,8 +45,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <div class="admin">
         	<div class="admin-content">
         	<div class="ui top attached tabular menu" style="height:50px;">
-				<a class="active item" data-tab="first" style="width: 150px;"><img src="image/人头.png">普通登录</a>
-			    <a class="item" data-tab="second" style="width: 160px;"><img src="image/手机.png" />手机动态码登录</a>
+				<a class="active item" data-tab="first" style="width: 50%;"><img src="image/人头.png">普通登录</a>
+			    <a class="item" data-tab="second" style="width: 50%;"><img src="image/手机.png" />手机动态码登录</a>
 			</div>
 		      <div class="ui bottom attached active tab segment" data-tab="first" style="height:440px;">
 		        <form action="adminLogin.do" method="post">
