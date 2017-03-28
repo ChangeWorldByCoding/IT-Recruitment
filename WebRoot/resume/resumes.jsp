@@ -44,7 +44,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li class="active"><a href="admin.jsp"><i
 							class="fa fa-home"></i>首页 </a></li>
 					<li><a href="job/JobManagement.jsp"><i class="fa fa-glass"></i>职位管理 </a></li>
-					<li><a href="resumefile/resume.jsp"><i class="fa fa-cog"></i>简历管理 </a>
+					<li><a href="resume/resumes.jsp"><i class="fa fa-cog"></i>简历管理 </a>
 						<ul class="submenu">
 							<li><a href="#ul01">下载的简历</a></li>
 							<li><a href="#ul02">应聘的简历 </a></li>

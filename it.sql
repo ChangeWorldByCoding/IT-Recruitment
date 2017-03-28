@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50520
 File Encoding         : 65001
 
-Date: 2017-03-14 17:50:26
+Date: 2017-03-24 12:48:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -135,7 +135,7 @@ CREATE TABLE `job` (
   KEY `prop` (`jobProp`),
   KEY `adminId` (`adminId`),
   CONSTRAINT `job_ibfk_1` FOREIGN KEY (`adminId`) REFERENCES `admin` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of job
