@@ -36,7 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</tr>
 							</thead>
 							<tbody>
-							   <c:forEach items="${adminJobList}" var="adminJobList" varStatus="adminJob">
+							   <c:forEach items="${adminDisplayJobList}" var="adminJobList" varStatus="adminJob">
 								<tr class="danger">
 									<td>${adminJob.count}</td>
 									<td>${adminJobList.jobName}</td>

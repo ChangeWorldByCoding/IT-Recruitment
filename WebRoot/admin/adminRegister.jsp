@@ -93,12 +93,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				  var t=pattern.test(email);
 				  if(t){}else{alert("邮箱格式不正确");}
 			  }); 
-			  $("#password").blur(function(){
-				  var password=$(this).val();
-				  var pattern=/^[A-Z]{1}[A-z0-9]{5}$/g;
-				  var t=pattern.test(password);
-				  if(t){}else{alert("首字母必须大写");}
-			  }); 
+			  
 		   });
 		</script>
 </html>

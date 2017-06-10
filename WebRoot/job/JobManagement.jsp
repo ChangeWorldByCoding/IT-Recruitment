@@ -100,8 +100,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     	<a href="addJob.do"><button style="background:brown;">
                     	<img src="image/jh.png" style="width:30px;height: 30px;">
                     	发布新职位</button></a><br>
-                    	<a href="adminJob.do" target="myFrame"><button class="bu1">显示中的职位</button></a><br>
-                    	<a href=""><button class="bu2" id="bu2">暂停职位</button></a><br>
+                    	<a href="adminDisplayJob.do" target="myFrame"><button class="bu1">显示中的职位</button></a><br>
+                    	<a href="adminNoDisplayJob.do" target="myFrame"><button class="bu2" id="bu2">暂停职位</button></a><br>
                     	<a href=""><button class="bu2" id="bu3">下线职位</button></a><br>
                     	<a href=""><button class="bu2" id="bu4">审核中的职位</button></a><br>
                     	<a href=""><button class="bu2" id="bu5">草稿箱</button></a><br>

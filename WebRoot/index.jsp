@@ -57,93 +57,90 @@
 	<!--体-->
 	<div class="body">
 		<!--体左边-->
-		<div class="body-left">
+		<div class="body-left" style="">
 			<div class="sidebar"
-				style="height: 500px; width: 270px; position: absolute;">
+				style="height: 500px; width: 270px;background:#8B0A50;position: absolute;margin-top:-20px;">
 				<h1>
 					<i class="fa fa-bars push"></i>分类<span class="color">Menu</span>
 				</h1>
-				<ul>
+				<ul class="uuu">
 					<li><a href="#"><i class="fa fa-dashboard push"></i><i>后端开发</i><i
 							class="fa fa-angle-right"></i></a><span class="hover"></span>
 						<ul class="sub-menu">
 							<li><a
-								href="showJobsByJobname.do?name=Java&pageindex=1&pagenum=5">Java<i
-									class="fa fa-angle-right"></i></a><span class="hover"></span></li>
+								href="showJobsByJobname.do?name=Java&pageindex=1&pagenum=5">Java</a><span class="hover"></span></li>
 							<li><a
-								href="showJobsByJobname.do?name=大数据&pageindex=1&pagenum=5">大数据<i
-									class="fa fa-angle-right"></i></a><span class="hover"></span></li>
+								href="showJobsByJobname.do?name=大数据&pageindex=1&pagenum=5">大数据</a><span class="hover"></span></li>
 							<li><a
-								href="showJobsByJobname.do?name=PHP&pageindex=1&pagenum=5">PHP<i
-									class="fa fa-angle-right"></i></a><span class="hover"></span></li>
-							<li><a href="#">.NET<i class="fa fa-angle-right"></i></a><span
+								href="showJobsByJobname.do?name=PHP&pageindex=1&pagenum=5">PHP</a><span class="hover"></span></li>
+							<li><a href="#">.NET</a><span
 								class="hover"></span></li>
-							<li><a href="#">C#<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">C#</a><span
 								class="hover"></span></li>
-							<li><a href="#">C<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">C</a><span
 								class="hover"></span></li>
-							<li><a href="#">Node.js<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">Node.js</a><span
 								class="hover"></span></li>
 						</ul></li>
 					<li><a href="#"><i class="fa fa-user push"></i><i>移动端开发</i><i
 							class="fa fa-angle-right"></i></a><span class="hover"></span>
 						<ul class="sub-menu">
-							<li><a href="#">html5<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">html5</a><span
 								class="hover"></span></li>
-							<li><a href="#">Android<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">Android</a><span
 								class="hover"></span></li>
-							<li><a href="#">ios<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">ios</a><span
 								class="hover"></span></li>
 						</ul></li>
 					<li><a href="#"><i class="fa fa-cog push"></i><i>前端开发</i><i
 							class="fa fa-angle-right"></i></a><span class="hover"></span>
 						<ul class="sub-menu">
-							<li><a href="#">html5<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">html5</a><span
 								class="hover"></span></li>
-							<li><a href="#">flash<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">flash</a><span
 								class="hover"></span></li>
-							<li><a href="#">html5<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">html5</a><span
 								class="hover"></span></li>
-							<li><a href="#">Javascript<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">Javascript</a><span
 								class="hover"></span></li>
-							<li><a href="#">u3d<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">u3d</a><span
 								class="hover"></span></li>
 						</ul></li>
 					<li><a href="#"><i class="fa fa-picture-o push"></i><i>测试</i><i
 							class="fa fa-angle-right"></i></a><span class="hover"></span>
 						<ul class="sub-menu">
-							<li><a href="#">功能测试 <i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">功能测试 </a><span
 								class="hover"></span></li>
-							<li><a href="#">性能测试<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">性能测试</a><span
 								class="hover"></span></li>
-							<li><a href="#">白盒测试<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">白盒测试</a><span
 								class="hover"></span></li>
-							<li><a href="#">灰盒测试<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">灰盒测试</a><span
 								class="hover"></span></li>
-							<li><a href="#">手机测试<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">手机测试</a><span
 								class="hover"></span></li>
 
 						</ul></li>
 					<li><a href="#"><i class="fa fa-file push"></i><i>DBA</i><i
 							class="fa fa-angle-right"></i></a><span class="hover"></span>
 						<ul class="sub-menu">
-							<li><a href="#">Mysql<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">Mysql</a><span
 								class="hover"></span></li>
-							<li><a href="#">sqlserver<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">sqlserver</a><span
 								class="hover"></span></li>
-							<li><a href="#">oracle<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">oracle</a><span
 								class="hover"></span></li>
-							<li><a href="#">db2<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">db2</a><span
 								class="hover"></span></li>
 						</ul></li>
 					<li><a href="#"><i class="fa fa-plane push"></i><i>硬件开发</i><i
 							class="fa fa-angle-right"></i></a><span class="hover"></span>
 						<ul class="sub-menu">
-							<li><a href="#">嵌入式<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">嵌入式</a><span
 								class="hover"></span></li>
-							<li><a href="#">自动化<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">自动化</a><span
 								class="hover"></span></li>
-							<li><a href="#">单片机<i class="fa fa-angle-right"></i></a><span
+							<li><a href="#">单片机</a><span
 								class="hover"></span></li>
 
 						</ul></li>
@@ -151,6 +148,10 @@
 			</div>
 
 		</div>
+		<style>
+		   .uuu .sub-menu{width:150px;}
+		   .uuu .sub-menu li{width:150px;}
+		</style>
 		<!--体右边-->
 		<div class="body-right">
 			<!--右上 搜索框-->
@@ -327,7 +328,7 @@
 						<a class="item" data-tab="second" style="width: 100px;">最新职位</a>
 					</div>
 					<div class="ui bottom attached active tab segment" data-tab="first"
-						style="height:800px;">
+						style="height:750px;">
 						<c:forEach items="${heatJobs}" var="heatJob">
 							<div class="bottom-t">
 								<div class="left" style="width:450px;">
@@ -380,7 +381,7 @@
 						</div>
 					</div>
 					<div class="ui bottom attached tab segment" data-tab="second"
-						style="height:800px;">
+						style="height:750px;">
 						<c:forEach items="${earlyJobs}" var="earlyJob">
 							<div class="bottom-t">
 								<div class="left" style="width:450px;">
@@ -437,7 +438,7 @@
 		</div>
 	</div>
 	<!--尾部-->
-	<div class="foot">
+	<div class="foot" >
 		<!--尾部顶-->
 		<div class="foot-top">
 			<div class="ffbottom">

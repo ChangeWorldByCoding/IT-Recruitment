@@ -13,8 +13,8 @@ public interface JobDao {
 	public List<Job> getJobs(Page page);
 
 	public Job getById(int id);
-	
-	public List<Job> getByAdminid(int adminId);
+
+	public List<Job> getByAdminid(int adminId, int state);
 
 	// 查询热门职位
 	public List<Job> getHeatJobs(int pageindex, int pagenum);
@@ -35,6 +35,6 @@ public interface JobDao {
 	// 按照公司名称查询
 	public List<Job> getJobsByCompanyName(String companyName, int pageindex,
 			int pagenum);
-	
+
 	public void deleteJobById(int id);
 }

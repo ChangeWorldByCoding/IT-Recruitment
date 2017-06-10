@@ -11,19 +11,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.gmg.domain.PResume;
 import com.gmg.domain.Result;
-import com.gmg.domain.Resume;
 import com.gmg.domain.User;
 import com.gmg.service.CommentService;
 import com.gmg.service.DircService;
 import com.gmg.service.JobService;
-import com.gmg.service.ResumeService;
+import com.gmg.service.PResumeService;
 import com.gmg.service.UserService;
 
 @Controller
 public class UserAction {
-	@Resource(name = ResumeService.SERVER_NAME)
-	private ResumeService rs;
+
+	@Resource(name = PResumeService.SERVER_NAME)
+	private PResumeService rs;
 	@Resource(name = JobService.SERVER_NAME)
 	private JobService js;
 	@Resource(name = DircService.SERVER_NAME)
@@ -40,6 +41,8 @@ public class UserAction {
 		String myCode = request.getParameter("code");
 		if (myCode.equalsIgnoreCase(code)) {
 			us.insert(user);
+			User u = us.findByUsername(user.getUserName());
+			request.getSession().setAttribute("u", u);
 			request.getSession().setAttribute("user", user);
 			return "index";
 		} else {
@@ -56,7 +59,7 @@ public class UserAction {
 		User user = new User(userName, passWord);
 		boolean flag = us.checkUser(user);
 		User u = us.findByUsername(userName);
-		Resume resume = rs.findByuserName(userName);
+		PResume resume = rs.findByuserName(userName);
 		if (flag) {
 			request.getSession().setAttribute("user", user);
 			request.getSession().setAttribute("u", u);
@@ -152,11 +155,11 @@ public class UserAction {
 		this.ds = ds;
 	}
 
-	public ResumeService getRs() {
+	public PResumeService getRs() {
 		return rs;
 	}
 
-	public void setRs(ResumeService rs) {
+	public void setRs(PResumeService rs) {
 		this.rs = rs;
 	}
 

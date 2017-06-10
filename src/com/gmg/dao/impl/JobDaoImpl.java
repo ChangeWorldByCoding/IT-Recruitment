@@ -80,18 +80,18 @@ public class JobDaoImpl implements JobDao {
 	}
 
 	@Override
-	public List<Job> getByAdminid(int adminId) {
+	public List<Job> getByAdminid(int adminId, int state) {
 		SqlSession session = ConnUtil.getSf().openSession(true);
 		JobMapper jm = session.getMapper(JobMapper.class);
-		return jm.getByAdminid(adminId);
+		return jm.getByAdminid(adminId, state);
 	}
 
 	@Override
 	public void deleteJobById(int id) {
 		SqlSession session = ConnUtil.getSf().openSession(true);
 		JobMapper jm = session.getMapper(JobMapper.class);
-	    jm.deleteJobById(id);
-		
+		jm.deleteJobById(id);
+
 	}
 
 }

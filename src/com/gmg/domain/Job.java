@@ -21,10 +21,12 @@ public class Job {
 	private String jobProp;
 	private int salary;
 	private Date publishDate;
-    private int adminId;
+	private int adminId;
+
 	public Job() {
 	}
-     public Job(String companyName, String jobName, String jobType,
+
+	public Job(String companyName, String jobName, String jobType,
 			String jobRegion, String education, String jobExpr, String jobIntr,
 			String name, String phone, String email, String jobWelfare,
 			String img, String main, String address, String jobProp,
@@ -47,8 +49,6 @@ public class Job {
 		this.salary = salary;
 		this.adminId = adminId;
 	}
-
-
 
 	public int getId() {
 		return id;
@@ -201,6 +201,5 @@ public class Job {
 	public void setAdminId(int adminId) {
 		this.adminId = adminId;
 	}
-	
 
 }

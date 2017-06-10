@@ -32,26 +32,20 @@ public class JobAction {
 
 	@RequestMapping("jobAdd.do")
 	public String addJob(@ModelAttribute("job") Job job,
-			@RequestParam("img") MultipartFile img, HttpServletRequest request)
+			@RequestParam("logo") MultipartFile logo, HttpServletRequest request)
 			throws IllegalStateException, IOException {
-		String myFile = img.getOriginalFilename();
+		String myFile = logo.getOriginalFilename();
 		String upload = request.getSession().getServletContext()
 				.getRealPath("upload");
 		File file = new File(upload, myFile);
-		img.transferTo(file);
+		logo.transferTo(file);
 		job.setImg(myFile);
-		String pageindex_ = request.getParameter("pageindex");
-		String pagenum_ = request.getParameter("pagenum");
-		int pageindex = Integer.parseInt(pageindex_);
-		int pagenum = Integer.parseInt(pagenum_);
-		Page page = new Page(pageindex, pagenum);
-		int adminId_ =(Integer) request.getSession().getAttribute("adminId");
+		int adminId_ = (Integer) request.getSession().getAttribute("adminId");
 		job.setAdminId(adminId_);
 		js.insert(job);
-		List<Job> listJob = js.getJobs(page);
-		request.setAttribute("pageindex", pageindex);
-		request.setAttribute("listJob", listJob);
-		return "job/job";
+		List<Job> adminJobList = js.getByAdminid(adminId_, 1);
+		request.setAttribute("adminDisplayJobList", adminJobList);
+		return "job/JobManagement";
 	}
 
 	@RequestMapping("getJobs.do")
@@ -177,27 +171,33 @@ public class JobAction {
 		request.setAttribute("pageindex", pageindex);
 		return "index";
 	}
-	
-	@RequestMapping("adminJob.do")
-	public String getAdminJobs(HttpServletRequest request) {
-		int adminId=(Integer) request.getSession().getAttribute("adminId");
-		List<Job> adminJobList = js.getByAdminid(adminId);
-		request.setAttribute("adminJobList", adminJobList);
-		return "job/adminJob";
+
+	@RequestMapping("adminDisplayJob.do")
+	public String adminDisplayJob(HttpServletRequest request) {
+		int adminId = (Integer) request.getSession().getAttribute("adminId");
+		List<Job> adminJobList = js.getByAdminid(adminId, 1);
+		request.setAttribute("adminDisplayJobList", adminJobList);
+		return "job/adminShowJob";
 	}
-	
+
+	@RequestMapping("adminNoDisplayJob.do")
+	public String adminNoDisplayJob(HttpServletRequest request) {
+		int adminId = (Integer) request.getSession().getAttribute("adminId");
+		List<Job> adminJobList = js.getByAdminid(adminId, 0);
+		request.setAttribute("adminNoneJobList", adminJobList);
+		return "job/adminNoneJob";
+	}
 
 	@RequestMapping("adminJobDelete.do")
 	public String deleAdminJobs(HttpServletRequest request) {
-		String id=request.getParameter("id");
-		int id_=Integer.parseInt(id);
+		String id = request.getParameter("id");
+		int id_ = Integer.parseInt(id);
 		js.deleteJobById(id_);
-		int adminId=(Integer) request.getSession().getAttribute("adminId");
-		List<Job> adminJobList = js.getByAdminid(adminId);
-		request.getSession().setAttribute("adminJobList", adminJobList);
-		return "job/JobManagement";
+		int adminId = (Integer) request.getSession().getAttribute("adminId");
+		List<Job> adminJobList = js.getByAdminid(adminId, 1);
+		request.setAttribute("adminDisplayJobList", adminJobList);
+		return "job/adminShowJob";
 	}
-
 
 	public JobService getJs() {
 		return js;

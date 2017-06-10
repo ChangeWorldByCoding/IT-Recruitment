@@ -170,13 +170,14 @@
 					<span style="color:#CCC;">
 						<fmt:formatDate value="${listJob.publishDate}"  type="date" dateStyle="default"/>
 					发布</span><br>
-					<span>${education}</span> <span style="color:#FE8D39;">${listJob.salary}K</span>
+					<span>${listJob.education}</span> <span style="color:#FE8D39;">${listJob.salary}K</span>
+					<span>${listJob.jobProp}</span>
 				</div>
 				<div class="t-m">
 					<a href="showJob.do?id=${listJob.id}">
 					<span>${listJob.companyName}</span></a> 
 					<span style="color:#00A57F;">
-						${jobType}</span>
+						${listJob.jobType}</span>
 				</div>
 				<div class="t-r">
 					<a href="showJob.do?id=${listJob.id}"><img
@@ -229,13 +230,14 @@
 					<span style="color:#CCC;">
 						<fmt:formatDate value="${listJob.publishDate}"  type="date" dateStyle="default"/>
 					发布</span><br>
-					<span>${education}</span> <span style="color:#FE8D39;">${listJob.salary}K</span>
+					<span>${listJob.education}</span> <span style="color:#FE8D39;">${listJob.salary}K</span>
+					<span>${listJob.jobProp}</span>
 				</div>
 				<div class="t-m">
 					<a href="showJob.do?id=${listJob.id}">
 					<span>${listJob.companyName}</span></a> 
 					<span style="color:#00A57F;">
-						${jobType}</span>
+						${listJob.jobType}</span>
 				</div>
 				<div class="t-r">
 					<a href="showJob.do?id=${listJob.id}"><img
@@ -288,13 +290,14 @@
 					<span style="color:#CCC;">
 						<fmt:formatDate value="${listJob.publishDate}"  type="date" dateStyle="default"/>
 					发布</span><br>
-					<span>${education}</span> <span style="color:#FE8D39;">${listJob.salary}K</span>
+					<span>${listJob.education}</span> <span style="color:#FE8D39;">${listJob.salary}K</span>
+				    <span>${listJob.jobProp}</span>
 				</div>
 				<div class="t-m">
 					<a href="showJob.do?id=${listJob.id}">
 					<span>${listJob.companyName}</span></a> 
 					<span style="color:#00A57F;">
-						${jobType}</span>
+						${listJob.jobType}</span>
 				</div>
 				<div class="t-r">
 					<a href="showJob.do?id=${listJob.id}"><img

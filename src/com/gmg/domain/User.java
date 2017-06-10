@@ -7,6 +7,7 @@ public class User {
 	private String tel;
 	private String email;
 	private String gender;
+	private String educateSchool;
 	private String education;
 	private String workyear;
 	private String state;
@@ -21,13 +22,15 @@ public class User {
 	}
 
 	public User(String userName, String passWord, String tel, String email,
-			String gender, String education, String workyear, String state,
-			String city, String type, String expectPosition, String salary) {
+			String gender, String educateSchool, String education,
+			String workyear, String state, String city, String type,
+			String expectPosition, String salary) {
 		this.userName = userName;
 		this.passWord = passWord;
 		this.tel = tel;
 		this.email = email;
 		this.gender = gender;
+		this.educateSchool = educateSchool;
 		this.education = education;
 		this.workyear = workyear;
 		this.state = state;
@@ -86,6 +89,14 @@ public class User {
 
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+
+	public String getEducateSchool() {
+		return educateSchool;
+	}
+
+	public void setEducateSchool(String educateSchool) {
+		this.educateSchool = educateSchool;
 	}
 
 	public String getEducation() {

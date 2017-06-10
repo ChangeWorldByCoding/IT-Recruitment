@@ -28,6 +28,7 @@
 <style>
    .head{margin-top:-25px;}
    .head ul li{line-height:30px;}
+   #body{background:#F8F8F8;}
 </style>
 <body>
 	<!--头部-->
@@ -87,19 +88,16 @@
 				<div class="content_l">
 					<div class="profile_box" id="basicInfo">
 						<h2>基本信息</h2>
-						<span class="c_edit"></span>
+						<span class="c_edit" ></span>
 						<div class="basicShow">
 							<p>姓名：${u.userName}</p>
 							<p>手机号：${u.tel}</p>
 							<p>邮箱：${u.email}</p>
 
-							<div class="m_portrait">
-								<div></div>
-							</div>
 						</div>
 						<!--end .basicShow-->
 
-						<div class="basicEdit dn">
+						<div class="basicEdit dn" >
 							<form id="profileForm" action="insertOnlineResume.do"
 								method="post">
 								<input type="text" name="id" style="display:none;"
@@ -114,7 +112,7 @@
 											<td>
 												<ul class="profile_radio clearfix reset">
 													<li class="current">男<em></em> <input type="radio"
-														checked="" name="gender" value="男">
+														 name="gender" value="男">
 													</li>
 													<li>女<em></em> <input type="radio" name="gender"
 														value="女">
@@ -173,6 +171,12 @@
 											<td colspan="3"><input type="text"
 												placeholder="接收面试通知的邮箱" value="jason@qq.com" name="email"
 												id="email"></td>
+										</tr>
+										<tr>
+											<td valign="top"><span class="redstar">*</span></td>
+											<td colspan="3"><input type="text"
+												placeholder="毕业学校" value="${u.educateSchool}" name="educateSchool"
+												></td>
 										</tr>
 										<tr>
 											<td valign="top"></td>
@@ -261,19 +265,48 @@
 												</div></td>
 											<td>
 												<ul class="profile_radio clearfix reset">
-													<li class="current">全职<em></em> <input type="radio"
+													<c:choose>  
+  													   <c:when test="${u.type=='全职'}">   
+													   <li class="current">全职<em></em> <input type="radio"
 														name="type"
-														<c:if test="${u.type == 全职}"> checked="checked" </c:if>
 														value="全职">
-													</li>
-													<li>兼职<em></em> <input type="radio" name="type"
-														<c:if test="${u.type == 兼职}"> checked="checked" </c:if>
+													 </li> 
+													   </c:when>  
+													     <c:otherwise> 
+													      <li>全职<em></em> <input type="radio"
+														name="type"
+														value="全职">
+													</li>  
+													   </c:otherwise>  
+													</c:choose>  
+													
+										           <c:choose>  
+  													   <c:when test="${u.type=='兼职'}">   
+													   <li class="current">兼职<em></em> <input type="radio"
+														name="type"
 														value="兼职">
-													</li>
-													<li>实习<em></em> <input type="radio" name="type"
-														<c:if test="${u.type == 实习}"> checked="checked" </c:if>
+													 </li> 
+													   </c:when>  
+													     <c:otherwise> 
+													      <li>兼职<em></em> <input type="radio"
+														name="type"
+														value="兼职">
+													</li>  
+													   </c:otherwise>  
+													</c:choose> 
+													 <c:choose>  
+  													   <c:when test="${u.type=='实习'}">   
+													   <li class="current" style="margin-left:140px;margin-top:-45px;">实习<em></em> <input type="radio" name="type"
 														value="实习">
-													</li>
+												    	</li>
+													 </c:when>  
+													     <c:otherwise> 
+													      <li style="margin-left:140px;margin-top:-45px;">实习<em></em> <input type="radio" name="type"
+														value="实习">
+												    	</li>
+													   </c:otherwise>  
+													</c:choose> 
+													
 												</ul>
 											</td>
 										</tr>
@@ -321,9 +354,10 @@
 							type="hidden" id="currentStateVal" value="${u.state}"> <input
 							type="hidden" id="telVal" value="${u.tel}">
 					</div>
-					<!--end #basicInfo-->
-
-
+				</div>
+                     </div>
+     			 </div>
+     			  </div>
 					<script src="style/js/profile.min.js" type="text/javascript"></script>
 </body>
 </html>

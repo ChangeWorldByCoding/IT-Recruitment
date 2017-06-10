@@ -74,16 +74,19 @@ public class JobServiceImpl implements JobService {
 		return jd.getJobsByCompanyName(companyName,
 				(pageindex_ - 1) * pagenum_, pagenum_);
 	}
+
 	@Override
-	public List<Job> getByAdminid(int adminId) {
-		
-		return jd.getByAdminid(adminId);
+	public List<Job> getByAdminid(int adminId, int state) {
+
+		return jd.getByAdminid(adminId, state);
 	}
+
 	@Override
 	public void deleteJobById(int id) {
 		jd.deleteJobById(id);
-		
+
 	}
+
 	public JobDao getJd() {
 		return jd;
 	}
@@ -91,9 +94,5 @@ public class JobServiceImpl implements JobService {
 	public void setJd(JobDao jd) {
 		this.jd = jd;
 	}
-
-	
-
-	
 
 }

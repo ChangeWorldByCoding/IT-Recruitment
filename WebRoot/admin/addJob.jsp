@@ -158,7 +158,7 @@
 								<li><label>电话</label><input type="text" placeholder="请输入电话" name="phone" id="mobile"></li>
 								<li><label>接受简历邮箱</label><input type="text" placeholder="请输入邮箱" name="email" id="email"></li>
 								<li><label>公司福利</label><input type="text" placeholder="请输入福利" name="jobWelfare"></li>
- 								<li><label>上传公司Logo:</label><input type="file" name="img"></li>
+ 								<li><label>上传公司Logo:</label><input type="file" name="logo"></li>
  								<li><label>公司网址</label><input type="text" placeholder="请输入公司网址" name="main"></li>
  								<li><label>公司地址</label><input type="text" placeholder="请输入公司地址" name="address"></li>
  								<li><label>工资金额</label><input type="text" placeholder="请输入工资金额" name="salary"></li>

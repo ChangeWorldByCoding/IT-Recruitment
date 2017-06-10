@@ -15,8 +15,11 @@ float:left;height:120px;width:700px; font-size:16px;}
 .b .b-left .b-left-top .r1 img{margin-top:20px;margin-left:20px;}				
 .b .b-left .b-left-middle{height:670px;width:100%;background:#FAFAFA;}
 .b .b-left .b-left-middle p,h4,h6{font-size:14px;margin-left:20px;}
-.b .b-left .b-left-middle .t2{float:left;height:100px;width:100%;
+.b .b-left .b-left-middle .t2{float:left;height:150px;width:100%;
 background:#CCC;border:1px #999999 dotted;font-size:18px;}
+.b .b-left .b-left-middle .t2 .deliverresume{float:left;height:40px;width:100%;}
+.b .b-left .b-left-middle .t2 .uploadresume{float:left;height:90px;width:100%;} 
+.b .b-left .b-left-middle .t2 .uploadresume .upload{width:100px;float:right;margin-top:-28px;margin-right:-2px;}
 .b .b-left .b-left-middle .t2 img,span{line-height:100px;margin-left:20px;}
 .b .b-left .b-left-middle button{float:right;width:10%;
 margin-top:20px;margin-right:50px;height:40px;background:#00A57F;

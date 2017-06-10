@@ -25,6 +25,6 @@ public interface UserMapper {
 	public List<User> getUsers();
 
 	// 填写在线简历
-	@Update("update user set gender=#{gender},education=#{education},workyear=#{workyear},state=#{state},city=#{city},type=#{type},expectPosition=#{expectPosition},salary=#{salary} where id=#{id}")
+	@Update("update user set gender=#{gender},education=#{education},workyear=#{workyear},educateSchool=#{educateSchool},state=#{state},city=#{city},type=#{type},expectPosition=#{expectPosition},salary=#{salary} where id=#{id}")
 	public void updateOnlineResume(User user);
 }

@@ -30,7 +30,7 @@ request.setAttribute("job", job);
   
   <body>
      <div class="top">
-			<div class="left"><img src="image/招聘.png"><br><span>IT招聘网</span></div>
+			<div class="left"><a href="index_forward.jsp"><img src="image/招聘.png"></a><br><span>IT招聘网</span></div>
 			<div class="middle">
 				<div class="m-top"></div>
 				<div class="m-bottom">
@@ -104,12 +104,7 @@ request.setAttribute("job", job);
 				  var t=pattern.test(email);
 				  if(t){}else{alert("邮箱格式不正确");}
 			  }); 
-			  $("#password").blur(function(){
-				  var password=$(this).val();
-				  var pattern=/^[A-Z]{1}[A-z0-9]{5}$/g;
-				  var t=pattern.test(password);
-				  if(t){}else{alert("首字母必须大写");}
-			  }); 
+			  
 		   });
 		</script>
 </html>

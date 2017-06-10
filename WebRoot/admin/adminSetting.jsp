@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<a href="admin/admin.jsp"><i class="fa fa-home"></i>首页 </a>
 						</li>
 						<li>
-							<a href="job/JobManage.jsp"><i class="fa fa-glass"></i>职位管理 </a>
+							<a href="job/JobManagement.jsp"><i class="fa fa-glass"></i>职位管理 </a>
 						</li>
 						<li>
 							<a href="resume/resumes.jsp"><i class="fa fa-cog"></i>简历管理 </a>

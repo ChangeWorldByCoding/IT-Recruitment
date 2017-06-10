@@ -20,6 +20,9 @@ request.setAttribute("jobid_", jobid_);
 	     <script type="text/javascript" src="style/js/semantic.js"></script>
 	    <script type="text/javascript" charset="utf-8" src="kindeditor-4.1.7/kindeditor.js"></script>  
         </head>
+        <style>
+        .head-top ul{margin-top:-5px;}
+        </style>
 	<body>
 	 <!--头部-->
 	<div class="head">
@@ -48,10 +51,12 @@ request.setAttribute("jobid_", jobid_);
 				</li>
 				<li><img src="image/手机.png"> <a href="app.jsp">APP</a></li>
 			</ul>
+			<style>
+			   .ul3 li{margin-top:10px;}
+			</style>
 			</c:if>
 			<c:if test="${user.userName!=null}">
 			<ul class="ul3">
-
 				<li><a href="login.jsp">消息</a>
 				</li>
 				<li>|</li>
@@ -83,13 +88,13 @@ request.setAttribute("jobid_", jobid_);
 			</c:if>
 		</div>
 	</div>
-	  <div class="main01" style="height:640px;">
-			<div class="main-left" style="margin-top:20px;">
+	  <div class="main01" style="height:640px;width:100%;background:#F8F8F8;">
+			<div class="main-left" style="margin-top:20px;width:50%;">
 			   <div class="ui form">
 			   	<form action="insertComment.do" method="post">
 			   	 <input type="text" name="jobId" value="${jobid_}" style="display:none;">
-				  <div class="field myfield">
-				     <textarea id="editor_id" name="content" style="width:400px;height:350px;visibility:hidden;"></textarea>
+				  <div class="field myfield"  style="width:100%;">
+				     <textarea id="editor_id" name="content" style="width:100%;height:350px;visibility:hidden;"></textarea>
 				 </div>
 				 <input type="submit" class="ui yellow button bt0" style="margin-left: 240px;" value="发布">
 				 </form>

@@ -34,9 +34,9 @@ public interface JobService {
 	// 按照公司名称查询
 	public List<Job> getJobsByCompanyName(String companyName, String pageindex,
 			String pagenum);
-	
-	public List<Job> getByAdminid(int adminId);
-	
+
+	public List<Job> getByAdminid(int adminId, int state);
+
 	public void deleteJobById(int id);
-	
+
 }

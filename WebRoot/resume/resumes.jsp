@@ -41,7 +41,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="jquery-accordion-menu-header" id="form"></div>
 				<ul id="demo-list">
 
-					<li class="active"><a href="admin.jsp"><i
+					<li class="active"><a href="admin/admin.jsp"><i
 							class="fa fa-home"></i>首页 </a></li>
 					<li><a href="job/JobManagement.jsp"><i class="fa fa-glass"></i>职位管理 </a></li>
 					<li><a href="resume/resumes.jsp"><i class="fa fa-cog"></i>简历管理 </a>

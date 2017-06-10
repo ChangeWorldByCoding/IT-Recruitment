@@ -32,7 +32,7 @@ request.setAttribute("job", job);
 				<li><a href="#" onclick="openCity()">[切换城市]</a></li>
 
 			</ul>
-			<ul class="ul2" style="margin-left:30px">
+			<ul class="ul2" style="margin-left:150px">
 
 				<li><a href="index_forward.jsp">首页</a></li>
 				<li><a href="getJobs.do?pageindex=1&pagenum=5">职位</a></li>

@@ -19,7 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <div class="top">
-			<div class="left"><img src="image/招聘.png"><br><span>IT招聘网</span></div>
+			<div class="left"><a href="index_forward.jsp"><img src="image/招聘.png"></a><br><span>IT招聘网</span></div>
 			<div class="middle">
 				<div class="m-top"></div>
 				<div class="m-bottom">
